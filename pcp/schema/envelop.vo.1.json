@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PCP Envelope v0.1",
+  "type": "object",
+  "required": ["project_id", "objective", "state", "updated_at"],
+  "properties": {
+    "version": { "type": "string" },
+    "project_id": { "type": "string" },
+    "objective": { "type": "string" },
+    "state": { "type": "string" },
+    "active_repos": { "type": "array", "items": { "type": "string" } },
+    "active_tasks": { "type": "array", "items": { "type": "string" } },
+    "task_owners": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "agent_notes": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "uri": { "type": "string" },
+          "mime": { "type": "string" }
+        },
+        "required": ["name", "uri"]
+      }
+    },
+    "fingerprint": { "type": "string" },
+    "updated_at": { "type": "string" }
+  },
+  "additionalProperties": false
+}

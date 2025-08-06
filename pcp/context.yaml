@@ -1,0 +1,17 @@
+version: 0.1.0
+project_id: jules-control-tower
+objective: "Operate the AI coding pipeline reliably and auditable."
+state: "Sprint-1: storage + basic fetch/push"
+active_repos: ["jules-control-tower", "orcaops", "scriptoria"]
+active_tasks:
+  - "Define PCP v0.1 schema and validation"
+  - "Create summarize-context prompt"
+  - "Adopt change protocol (fingerprint + changelog)"
+task_owners:
+  "schema v0.1": "George"
+  "prompts": "George"
+agent_notes:
+  Jules: "notebook://jules/pcp"
+attachments: []
+fingerprint: "" # filled by validate.sh
+updated_at: "2025-08-04T13:00:00-04:00"
