@@ -1,5 +1,9 @@
 # Project Context Protocol (PCP)
 
+> **⚠️ Archived — superseded by [`~/cognition/pcp`](../pcp) (PCP v0.2, 2026).**
+>
+> This repo is PCP Envelope v0.1 (August 2025), kept as prior art. It bundled three concerns into one seed: the packet format, MCP serving, and reconciliation (the `merge-assistant` prompt — the earliest ancestor of [Anamnesis](../anamnesis)). The 2026 architecture unbundles them: the `pcp` repo owns only the packet format; serving belongs to the consuming systems; reconciliation belongs to Anamnesis. Three genes were carried forward: envelope minimalism, fingerprint + changelog provenance, and the ≤10-line `summarize-context` render. See `docs/PCP.md` in the new repo for the full lineage.
+
 A self-developing framework for managing context length limitations in AI-assisted software development.
 
 ## What It Does
